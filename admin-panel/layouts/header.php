@@ -1,8 +1,8 @@
 <?php
 
 session_start();
-define("APPURL", "http://localhost/foodordering");
-define("ADMINURL", "http://localhost/foodordering/admin-panel");
+
+require "global-config.php";
 
 $current = basename($_SERVER['PHP_SELF']);
 

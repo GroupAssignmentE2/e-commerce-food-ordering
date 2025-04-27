@@ -1,16 +1,16 @@
+<?php require "../includes/header.php"; ?>
+<?php require "../config/config.php"; ?>
+<?php require "../config/telegram.php"; ?>
 <?php
 
 if (!isset($_SERVER['HTTP_REFERER'])) {
     // redirect them to your desired location
-    header('location: http://localhost/foodordering/index.php');
+    header('location: '.APPURL.'/index.php');
     exit;
 }
 
 ?>
 
-<?php require "../includes/header.php"; ?>
-<?php require "../config/config.php"; ?>
-<?php require "../config/telegram.php"; ?>
 <?php
 
 if (!isset($_SESSION['username'])) {

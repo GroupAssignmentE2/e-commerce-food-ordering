@@ -2,10 +2,8 @@
 
     
     session_start();
-    define("APPURL","http://localhost/foodordering");
-    
-    define("IMGURLCATEGORY", "http://localhost/foodordering/admin-panel/categories-admins/img_category");
-    define("IMGURLPRODUCT", "http://localhost/foodordering/admin-panel/products-admins/img_product");
+
+    require "global-config.php";
 
     require dirname(dirname(__FILE__)) . "/config/config.php";
 
